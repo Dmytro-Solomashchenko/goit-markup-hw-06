@@ -403,20 +403,6 @@ img {
   fill: var(--button-hover-color);
 }
 
-.form {
-  width: 100%;
-  outline: 1px solid tomato;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.form-field {
-  outline: 1px solid blue;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -427,8 +413,9 @@ img {
   margin-bottom: 12px;
 }
 
-.form-field .form-field--last {
-  margin-bottom: 20px;
+.form {
+  width: 100%;
+  outline: 1px solid tomato;
 }
 
 .form-field-label {
@@ -438,6 +425,38 @@ img {
   letter-spacing: 0.01em;
 
   color: var(--secondary-text-color);
+}
+
+.form-field {
+  outline: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-field-input {
+  min-height: 40px;
+  width: 100%;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+
+.form-field-input:active,
+.form-field-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-field-input:active + .form-icon,
+.form-field-input:focus + .form-icon {
+  fill: var(--accent-color);
 }
 
 .form-comment {
@@ -454,13 +473,6 @@ img {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
-}
-
-.form-field-input {
-  width: 100%;
-  min-height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
 }
 
 .submit-button {
