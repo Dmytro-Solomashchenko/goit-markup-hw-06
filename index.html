@@ -487,7 +487,7 @@
           </svg>
         </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <form class="form js-speaker-form" action="">
+        <form class="form js-speaker-form">
           <label class="form-field-label" for="name">Имя</label>
           <div class="form-field">
             <input class="form-field-input" type="text" name="name" id="name" />
@@ -504,7 +504,12 @@
           </div>
           <label class="form-field-label" for="mail">Почта</label>
           <div class="form-field">
-            <input class="form-field-input" type="mail" name="mail" id="mail" />
+            <input
+              class="form-field-input"
+              type="email"
+              name="mail"
+              id="mail"
+            />
             <svg class="form-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email-modal"></use>
             </svg>
