@@ -456,6 +456,26 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscription">
+          <form class="footer-subscription-form">
+            <p class="footer-subscription-title">Подпишитесь на рассылку</p>
+            <div class="footer-subscription-block">
+              <input
+                class="footer-subscription-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+              <button class="footer-subscription-button" type="submit">
+                Подписаться
+                <svg class="footer-send-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon_send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <!--Modal-->
@@ -466,6 +486,42 @@
             <use href="./images/icons.svg#icon-close-button"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="form js-speaker-form" action="">
+          <div class="form-field">
+            <label class="form-field-label" for="name">Имя</label>
+            <input class="form-field-input" type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label class="form-field-label" for="tel">Телефон</label>
+            <input class="form-field-input" type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label class="form-field-label" for="mail">Почта</label>
+            <input class="form-field-input" type="mail" name="mail" id="mail" />
+          </div>
+          <div class="form-field">
+            <label class="form-field-label" for="comment">Комментарий</label>
+            <textarea
+              class="form-comment"
+              name="comment"
+              id="comment"
+              rows="7"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <input
+            class="form-checkbox"
+            type="checkbox"
+            name="policy"
+            id="policy"
+          />
+          <label class="checkbox-text" for="policy"
+            >Соглашаюсь с рассылкой и принимаю Условия договора</label
+          >
+
+          <button type="submit" class="submit-button">Отпрвавить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
