@@ -203,6 +203,10 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-adress-box {
+  width: 231px;
+}
+
 .footer-adress {
   font-style: normal;
   line-height: 1.71;
@@ -522,6 +526,10 @@ img {
 .form-checkbox:checked + .checkbox-text .checkbox-icon {
   background-color: var(--accent-color);
   border: none;
+}
+
+.form-checkbox:focus + .checkbox-text .checkbox-icon {
+  border: 2px solid var(--accent-color);
 }
 
 .submit-button {
