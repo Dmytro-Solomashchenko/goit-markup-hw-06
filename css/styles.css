@@ -501,7 +501,7 @@ img {
 
 .checkbox-terms {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   color: var(--secondary-text-color);
 }
 
@@ -552,9 +552,6 @@ img {
   background-color: var(--button-hover-color);
 }
 
-.form-checkbox {
-  margin-bottom: 30px;
-}
 /* ------------------------------------------------------------ */
 /*                       Index Main                             */
 /* ------------------------------------------------------------ */
